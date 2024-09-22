@@ -15,7 +15,7 @@ function App(): React.JSX.Element {
                 <li>i am thing two</li>
                 <li>i am thing three</li>
             </ul>
-            <Button>Log Hello World</Button>
+            
             <Button onClick={ () => { console.log("Hello World!") } }>Log Hello World</Button>
             <Container>
             <Row>
