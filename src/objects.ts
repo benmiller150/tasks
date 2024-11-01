@@ -33,7 +33,7 @@ export function isCorrect(question: Question, answer: string): boolean {
     const trimmed = answer.trim().toLowerCase();
     const expectedtrimmed = question.expected.trim().toLowerCase();
 
-    
+
     return trimmed ===expectedtrimmed;
 }
 
@@ -49,12 +49,12 @@ export function isValid(question: Question, answer: string): boolean {
     }
     else if(question.type === "multiple_choice_question"){
     if( question.options.includes(answer)){
-        return true; 
+        return true;
     }
     else{
         return false;
     }
-        
+
     }
 
     return false;
@@ -67,7 +67,7 @@ export function isValid(question: Question, answer: string): boolean {
  * name "My First Question" would become "9: My First Q".
  */
 export function toShortForm(question: Question): string {
-    
+
     const firstten = `${question.id}: ${question.name.slice(0, 10)}`;
     return firstten;
 }
@@ -116,12 +116,12 @@ export function renameQuestion(question: Question, newName: string): Question {
  * published; if it was published, now it should be not published.
  */
 export function publishQuestion(question: Question): Question {
-    
+
     if(question.published === true){
         return {
             ...question,
             published : false
-        
+
 
         };
     }
@@ -130,7 +130,7 @@ export function publishQuestion(question: Question): Question {
             ...question,
             published : true
         };
-    }      
+    }
 }
 
 /**
@@ -147,7 +147,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
         published: false,
     };
 }
-    
+
 
 /**
  * Return a new version of the given question, with the `newOption` added to
@@ -157,7 +157,7 @@ export function duplicateQuestion(id: number, oldQuestion: Question): Question {
  * Check out the subsection about "Nested Fields" for more information.
  */
 export function addOption(question: Question, newOption: string): Question {
-    
+
     return {
         ...question,
         options:[...question.options, newOption]
