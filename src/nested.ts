@@ -124,7 +124,7 @@ export function renameQuestionById(
             };
         }
         return question;
-    });
+    });}
 
 
 /**
@@ -139,7 +139,7 @@ export function renameQuestionById(
  *
  * Hint: you need to use the ... operator for both the question and the options array
  */
- function editOption(
+ export function editOption(
     questions: Question[],
     targetId: number,
     targetOptionIndex: number,
@@ -163,5 +163,4 @@ export function renameQuestionById(
             }
             return question
         });
-
-    }}
+}

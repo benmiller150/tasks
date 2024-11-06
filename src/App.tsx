@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
-<<<<<<< HEAD
 import { Button, Col, Container, Row } from "react-bootstrap";
-=======
 import { ChangeType } from "./components/ChangeType";
 import { RevealAnswer } from "./components/RevealAnswer";
 import { TwoDice } from "./components/TwoDice";
 import { Counter } from "./components/Counter";
->>>>>>> upstream/task-state
 
 function App(): React.JSX.Element {
     return (
@@ -15,7 +12,6 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
             </header>
-<<<<<<< HEAD
             <h1>Hello World</h1>
             <img src="https://th.bing.com/th/id/OIP.CBFZpMOFqyCjyHOJxouwVAHaE8?rs=1&pid=ImgDetMain"alt="pic of some random cat" />
             <ul>
@@ -23,24 +19,23 @@ function App(): React.JSX.Element {
                 <li>i am thing two</li>
                 <li>i am thing three</li>
             </ul>
-            
+
             <Button onClick={ () => { console.log("Hello World!") } }>Log Hello World</Button>
             <Container>
             <Row>
                 <Col>rgb(200, 44, 44)</Col>
                 <Col>rgb(200, 44, 44)
-                    
+
                 </Col>
             </Row>
         </Container>
-            
-            
-            
+
+
+
             <p>
                 Edit <code>src/App.tsx</code> and save. ben miller  hello world This page will
                 automatically reload.
             </p>
-=======
             <hr></hr>
             <Counter></Counter>
             <hr />
@@ -49,7 +44,6 @@ function App(): React.JSX.Element {
             <TwoDice></TwoDice>
             <hr />
             <ChangeType></ChangeType>
->>>>>>> upstream/task-state
         </div>
     );
 }
