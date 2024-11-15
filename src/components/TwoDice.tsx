@@ -14,12 +14,12 @@ export function d6(): number {
 export function TwoDice(): React.JSX.Element {
     const [leftDie, setLeftDie] = useState(d6());
     const [rightDie, setRightDie] = useState(d6());
-    
+
 
 
     function rollLeft(){
         const newLeftDie = d6();
-        setLeftDie(newLeftDie);;
+        setLeftDie(newLeftDie);
 
     }
 
